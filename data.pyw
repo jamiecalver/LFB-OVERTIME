@@ -2,7 +2,8 @@ import sqlite3
 
 conn = sqlite3.connect('overtimeTEST.db')
 cursor = conn.cursor()
-cursor.execute("DROP TABLE IF EXISTS overtime")
+#cursor.execute("DROP TABLE IF EXISTS overtime")
+#only uncomment line 5 if starting with a fresh .db file with no tables in
 
 sql = """ CREATE TABLE overtime (
     id integer PRIMARY KEY,
